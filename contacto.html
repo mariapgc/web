@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+		<title>Campanario</title>
+	</head>
+	<body>
+		<header>
+			<img src="imagenes/cabecera.jpg" id="cabecera"/>
+		</header>
+		<nav>
+			<a href="index.html">INICIO</a>
+			<a href="datosEstadistico.html">DATOS ESTADISTICOS</a>
+			<a href="contenidoMultimedia.html">CONTENIDO MULTIMEDIA</a>
+			<a href="tradiciones.html">TRADICCIONES</a>
+			<a href="historia.html">HISTORIA</a>
+			<a href="informacionTuristica.html">INFORMACION TURISTICA</a>
+			<a href="contacto.html">CONTACTO</a>
+		</nav>
+		<section>
+			<div>
+				<form name="contacto" class="formulario" action="control_formulario.php" method="get">
+					<fieldset>
+					<div>
+						<legend>Nombre</legend>
+						<input required type="text" name="nombre">
+						<legend>Correo electrónico</legend>
+						<input required type="email" name="correo">
+						<legend>Asunto</legend>
+						<input type="text" name="asunto">
+						<legend>Mensaje</legend>
+						<textarea rows="10" cols="40" name="mensaje"></textarea><br><br>
+						<label>¿Te ha gustado el pueblo?</label><br>
+						<input type="radio" value= "si" name="gusta">Si
+						<input type="radio" value= "no" name="gusta">No<br><br>
+						<label>¿Resides en el pueblo?</label><br>
+						<select>
+						<option value="si">Si</option>
+						<option value="no">No</option>
+						<option value="sr">Segunda residencia</option>
+						</select><br>
+						<input required type="checkbox" value="si"><label>Sí, he leído y acepto la Política de Protección de datos</label> <br><br>
+						<button>Enviar</button>
+					</div>
+					</fieldset>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div id="iconos">
+				<a href="https://www.instagram.com/aytocampanario/#" target="blank"><img src="imagenes/instagram.png" class="icon"/></a>
+				<a href="https://www.facebook.com/ayto.campanario/" target="blank"><img src="imagenes/facebook.png" class="icon"/></a>
+			</div>
+		</footer>
+	</body>
+</html>
